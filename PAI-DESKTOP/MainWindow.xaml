@@ -1,0 +1,33 @@
+﻿<Window x:Class="PAI_DESKTOP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Ekran Logowania - Sklep budowlany" Height="350" Width="525" Icon="resources/home-1.png" ResizeMode="NoResize" Background="#FF7A7A7A">
+    <Border Padding="18">
+    <StackPanel>
+            <TextBlock Margin="0 10 0 50" Text="PAI - Sklep budowlany / Aplikacja administracyjna" FontWeight="Bold" FontSize="20" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Margin="150 0 0 0" Grid.Column="0" Text="Login:" FontSize="16" FontWeight="Bold" />
+                <TextBox x:Name="login" Margin="0 3 100 20" Grid.Column="1" BorderThickness="1" BorderBrush="Black" />
+
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Margin="150 0 0 0" Grid.Column="0" Text="Hasło:" FontWeight="Bold" FontSize="16" />
+                <PasswordBox x:Name="password" Margin="0 3 100 20" Grid.Column="1" BorderBrush="Black" BorderThickness="1" />
+
+            </Grid>
+        
+        <Button x:Name="loginBtn" Click="loginBtn_Click" Margin="180 50 180 0" Content="Zaloguj" FontWeight="Bold" BorderBrush="Black" />
+
+        </StackPanel>
+    </Border>
+</Window>
